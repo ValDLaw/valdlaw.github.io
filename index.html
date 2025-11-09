@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valeria Espinoza | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Valeria Espinoza</h1>
+        <p>Machine Learning · Data Science · Software Engineering</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro fade-in">
+        <p>
+          I’m a <strong>Computer Engineering master’s student at Columbia University</strong> 
+          with hands-on experience in <strong>machine learning, data science and software development</strong>.
+          My work bridges high-performance systems and AI, combining <strong>C++, Python and SQL</strong> 
+          with a strong foundation in algorithms, distributed systems and cloud computing (AWS, GCP).
+        </p>
+        <p>
+          I’ve developed scalable, data-driven applications with 
+          <strong>PyTorch, scikit-learn, PostgreSQL, Django and Vue.js</strong>. 
+          My research at <strong>Purdue University</strong> explored adversarial attacks on Vision Transformers, 
+          deepening my understanding of AI robustness and cybersecurity.
+        </p>
+        <p>
+          I’m passionate about building systems that connect machine learning with software engineering,
+          from optimizing trading platforms to analyzing large-scale spatiotemporal data.
+        </p>
+      </section>
+
+      <h2 class="section-title fade-in">Selected Projects</h2>
+
+      <div class="projects-grid">
+
+        <div class="project fade-in highlight">
+          <h3>🏛️ MIT Policy Hackathon 2024 — 1st Place, MIT College of Computing</h3>
+          <p>
+            Collaborated on a policy and technology proposal for a sustainable resentencing system in California. 
+            Our solution integrated an <strong>interactive public dashboard</strong>, 
+            <strong>machine learning model</strong> for case eligibility prediction, and 
+            a transparency-based accountability framework for district attorneys.
+          </p>
+          <p>
+            I led the <strong>data analysis and machine learning component</strong>, 
+            building a Balanced Random Forest classifier trained on ~90,000 cases using SMOTE for class balancing. 
+            The model achieved <strong>0.86 recall</strong> on eligible cases — effectively identifying candidates for review.
+          </p>
+          <p><strong>Tools:</strong> Python, scikit-learn, SMOTE, Random Forest, Data Ethics</p>
+          <a href="pdfs/mit-policy-hackathon.pdf" target="_blank">📄 Read Project Report</a> |
+          <!-- <a href="https://github.com/ValDLaw/MIT-Hackathon" target="_blank">🔗 GitHub Repo</a> -->
+        </div>
+
+        <div class="project fade-in">
+          <h3>🧠 Data-Free Backdoor Injection on Vision Transformers (ViTs)</h3>
+          <p>
+            Conducted research on data-free backdoor attacks against the EVA-02 Vision Transformer using LoRA fine-tuning.
+            Injected a stealthy visual trigger without access to the original training data, achieving 84.1% clean accuracy and 60.3% attack success rate (ASR).
+            Implemented GradRollout visualizations to analyze attention-layer activation and proposed a lightweight masking defense to reduce ASR.
+            Tools: PyTorch, Vision Transformers, LoRA, TinyImageNet
+          </p>
+          <p><strong>Tools:</strong> PyTorch, Vision Transformers, LoRA, TinyImageNet</p>
+          <a href="pdfs/dbia-project.pdf" target="_blank">📄 Project Pitch</a>
+        </div>
+
+        <div class="project fade-in">
+          <h3>🌡️ EY Open Science AI & Data Challenge — Urban Heat Island Modeling</h3>
+          <p>
+            Ranked <strong>3rd in Latin America</strong> (15th globally). Developed a predictive ML model 
+            using Sentinel-2, Landsat, and building footprint data; stacked ExtraTrees + XGBoost + ElasticNetCV 
+            for optimal generalization and recall.
+          </p>
+          <p><strong>Tools:</strong> Python, scikit-learn, XGBoost, LightGBM, Remote Sensing</p>
+          <a href="pdfs/ey-report.pdf" target="_blank">📄 Report</a> | 
+          <a href="https://github.com/valeriaespinoza/ey-heat-model" target="_blank">🔗 GitHub</a>
+        </div>
+
+        <div class="project fade-in">
+          <h3>🕵️‍♀️ Spatio-Temporal Crime Patterns Visualization</h3>
+          <p>
+            Built a topological graph analysis framework to uncover crime evolution in São Paulo (2006–2017). 
+            Extracted 1,440 subgraphs via TDA and clustered patterns using UMAP + DBSCAN to reveal persistent hotspots.
+          </p>
+          <p><strong>Tools:</strong> Python, OSMnx, TDA, UMAP, DBSCAN</p>
+          <a href="pdfs/crime-topology-report.pdf" target="_blank">📄 Report</a>
+        </div>
+
+        <div class="project fade-in">
+          <h3>🤖 Aurora — Virtual University Counselor</h3>
+          <p>
+            Mental-health chatbot for students using OpenAI, Auth0, and AWS. 
+            Integrated keyword alerts, recommendation logic, and privacy-focused data management.
+          </p>
+          <p><strong>Tools:</strong> OpenAI API, Python, PostgreSQL, MongoDB, Vue.js, AWS</p>
+          <a href="pdfs/aurora-pitch.pdf" target="_blank">📄 Pitch Deck</a>
+        </div>
+
+        <div class="project fade-in">
+          <h3>🧩 Transactional Blockchain Simulator with Indexed Query Layer</h3>
+          <p>
+            Designed and built a Blockchain simulation in C++ with core data structures (BST, Hash Table, Linked List). 
+            Implemented SHA-256 hashing and Proof-of-Work to ensure tamper detection and historical integrity.
+          </p>
+          <p>
+            Integrated multiple indexing structures to optimize transactional lookups 
+            (range, equality, min/max) over large datasets.
+          </p>
+          <p><strong>Tools:</strong> C++, Cryptography, Data Structures</p>
+          <a href="pdfs/blockchain-report.pdf" target="_blank">📄 Report</a>
+        </div>
+
+        <div class="project fade-in">
+          <h3>🎨 Cross-Domain Image Colorization with GANs</h3>
+          <p>
+            Implemented GAN-based image colorization (cartoon → real). Benchmarked UNet and ResNet34 architectures 
+            using SSIM and CIEDE2000 metrics for objective evaluation.
+          </p>
+          <p><strong>Tools:</strong> PyTorch, GANs, UNet, ResNet34</p>
+          <a href="pdfs/colorization-paper.pdf" target="_blank">📄 Paper</a>
+        </div>
+
+        <div class="project fade-in">
+          <h3>🔐 RSA & ElGamal Cryptosystem Implementation and Security Analysis</h3>
+          <p>
+            Implemented RSA and ElGamal systems simulating secure Alice/Bob/Eve communication; 
+            demonstrated vulnerabilities and applied defensive coding strategies.
+          </p>
+          <p><strong>Tools:</strong> Python, Cryptography, Unit Testing</p>
+          <a href="pdfs/crypto-project.pdf" target="_blank">📄 Report</a>
+        </div>
+
+        <div class="project fade-in">
+          <h3>🎮 Virtual Reality Escape Room (UX/HCI)</h3>
+          <p>
+            Developed an immersive VR escape experience with puzzle logic and responsive interactions. 
+            User testing achieved >4/5 satisfaction across UX metrics.
+          </p>
+          <p><strong>Tools:</strong> Unity, C#, Oculus SDKs, UX Design</p>
+          <a href="demos/vr-escape-demo.html" target="_blank">🎥 Demo</a>
+        </div>
+
+        <div class="project fade-in">
+          <h3>📷 Multimedia Search & Retrieval System (Image Similarity)</h3>
+          <p>
+            Built a full-stack image retrieval system using Faiss, KD-Tree, and RTree indexing. 
+            Vue.js front-end enables image upload and retrieval via Python API.
+          </p>
+          <p><strong>Tools:</strong> Python, Vue.js, Faiss, KD-Tree, RTree</p>
+          <a href="https://github.com/valeriaespinoza/image-retrieval-system" target="_blank">🔗 GitHub</a>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Valeria Espinoza</p>
+      <a href="https://linkedin.com/in/valeria-espinoza-tarazona" target="_blank">LinkedIn</a> | 
+      <a href="mailto:vne2102@columbia.edu">Email</a>
+    </footer>
+  </body>
+</html>
