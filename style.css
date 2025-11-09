@@ -90,6 +90,7 @@ main {
   background: linear-gradient(145deg, transparent 40%, var(--glow));
   opacity: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 .project:hover::before {
   opacity: 1;
